@@ -1,8 +1,6 @@
 #!/bin/bash
 if ! command -v exiftool &> /dev/null; then
     echo "installing exiftool packet."
-    sudo apt update
-    sudo apt upgrade -y libimage-exiftool-perl
     sudo apt install -y libimage-exiftool-perl
     echo "installation complete"
 fi
